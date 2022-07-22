@@ -94,9 +94,7 @@
                         class="form-range" oninput="this.nextElementSibling.value = this.value">
                     <output style="color:white;font-size:3vw; ">0</output>
                     <textarea style="width:75%" name="skill_description" class="form-control" placeholder="Skill description or lagging areas"></textarea>
-                </div class="mb-3 mt-3">
-                <button style="position:absolute;left:63%" id="t" type="button" class="btn btn-primary" href="#">+ Add
-                    skill</button>
+                </div>
 
             </div>
 
@@ -115,27 +113,29 @@
                     
                 }
             </script>
-             <script>
-                var dat = document.getElementById("date")
-                    const date = new Date();
-        const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-        
-        let wday = weekday[date.getUTCDay()];
-        day = date.getDate();
-        month = date.getMonth() + 1;
-        year = date.getFullYear();
-        var a = day + '-' + month + '-' + year + ',' + "\n" + wday;
-        dat.value=a;
-                
-            </script>
-          
-            <div class="container mt-3" >
-                <input id="date" name="date"  type="date" class="btn btn-primary">
-                <button type="submit" id="btnShow" href="#" class="btn btn-primary" onclick="sh()">Submit</button>
-                <button type="reset" class="btn btn-primary">Reset</button>
-            </div>
+          <script>
+            var dat = document.getElementById("date")
+                const date = new Date();
+    const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    
+    let wday = weekday[date.getUTCDay()];
+    day = date.getDate();
+    month = date.getMonth() + 1;
+    year = date.getFullYear();
+    var a = day + '-' + month + '-' + year + ',' + "\n" + wday;
+    dat.value=a;
             
-
+        </script>
+      
+        <div >
+            <button style="background-color:darkgreen" id="t" type="button" class="btn btn-primary" href="#">+ Add
+                skill</button>
+                <br>
+                <br>
+            <input style="width:fit-content" id="date" name="date"  type="date" class="btn btn-primary" formtarget="">
+            <button style="background-color:rgb(78, 192, 78)" type="submit" id="btnShow" href="#" class="btn btn-primary" onclick="sh()">Submit</button>
+            <button style="background-color:rgb(242, 53, 110)"type="reset" class="btn btn-primary">Reset</button>
+        </div>
     </div>
     </form>
 

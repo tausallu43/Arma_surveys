@@ -45,13 +45,13 @@
        
         var h = '<div class="mb-3 mt-3" id="rr'+counter+r+'">\
 <input type="text" style="width:40%" class="form-control" id="skill_title" placeholder="Skill title"\
-    name="skill_title"> <button id="'+counter+r+'" class="btn btn-primary" type="button" style="background-color:red" onclick="remove(this)" value="'+counter+'">- Remove skill</button> <br> \
+    name="skill_title"> <button id="'+counter+r+'" class="btn btn-primary" type="button" style="background-color:red" onclick="remove(this)" >- Remove skill</button> <br> \
 <label for="skill_range" style="color:white;font-size: 3vw; " class="form-label">Skill rating\
     scale:</label>\
 <input id="skill_range" name="skill_range" type="range"  style="width: 40%;" value="0" min="0" max="10"\
     class="form-range" oninput="this.nextElementSibling.value = this.value">\
 <output style="color:white;font-size:3vw; ">0</output>\
-<textarea style="width:75%" name="skill_description" class="form-control" placeholder="Skill description"></textarea>\
+<textarea style="width:75%" name="skill_description" class="form-control" placeholder="Skill description or lagging areas"></textarea>\
 </div>\
 ';
                 $(h).appendTo("#s");
@@ -93,7 +93,7 @@
                     <input id="skill_range" name="skill_range" type="range"  style="width: 40%;" value="0" min="0" max="10"
                         class="form-range" oninput="this.nextElementSibling.value = this.value">
                     <output style="color:white;font-size:3vw; ">0</output>
-                    <textarea style="width:75%" name="skill_description" class="form-control" placeholder="Skill description"></textarea>
+                    <textarea style="width:75%" name="skill_description" class="form-control" placeholder="Skill description or lagging areas"></textarea>
                 </div>
 
             </div>

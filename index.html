@@ -90,11 +90,11 @@
 
                     <label for="skill_range" style="color:white;font-size: 3vw; " class="form-label">Skill rating
                         scale:</label>
-                    <input id="skill_range" name="skill_range" type="range"  style="width: 40%;" value="0" min="0" max="10"
+                    <input id="skill_range" name="skill_range" type="range"  style="width: 40%;font-size:2vw" value="0" min="0" max="10"
                         class="form-range" oninput="this.nextElementSibling.value = this.value">
                     <output style="color:white;font-size:3vw; ">0</output>
                     <textarea style="width:75%" name="skill_description" class="form-control" placeholder="Skill description or lagging areas"></textarea>
-                </div>
+                </div class="mb-3 mt-3">
                 <button style="position:absolute;left:63%" id="t" type="button" class="btn btn-primary" href="#">+ Add
                     skill</button>
 
@@ -129,12 +129,12 @@
                 
             </script>
           
-            <div class="container mt-3">
+            <div class="container mt-3" >
                 <input id="date" name="date"  type="date" class="btn btn-primary">
                 <button type="submit" id="btnShow" href="#" class="btn btn-primary" onclick="sh()">Submit</button>
                 <button type="reset" class="btn btn-primary">Reset</button>
             </div>
-            <div id="mock"></div>
+            
 
     </div>
     </form>
